@@ -1,0 +1,13 @@
+ai:
+    platform:
+        openai:
+            api_key: '%env(OPENAI_API_KEY)%'
+
+    agent:
+        default:
+            model: 'gpt-4o-mini'
+            prompt: 'You are a helpful Symfony assistant. concise and technical.'
+        
+        support_bot:
+            model: 'gpt-4o'
+            prompt: 'You are a customer support agent. Be polite and empathetic.'
